@@ -1,0 +1,273 @@
+<!DOCTYPE html> 
+<html><head>
+<meta charset="utf-8">
+<title>Rodin | jQuery Mobile Theme</title>
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<!-- Styles -->
+<link rel="stylesheet" href="assets/css/theme-switch.css" type="text/css"> <!--Theme Switcher--> 
+<!-- / Styles -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.1.7.1.min.js"></script>
+<script src="assets/js/jquery.mobile-1.1.0.min.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/jquery.pngFix.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/jquery.tabs.js"></script><!-- Need for Tabs Menu -->
+<!-- / Scripts -->
+
+<!-- Menu -->
+<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+<script src="assets/js/jquery.flexslider.js"></script>
+<script>
+$(document).ready(function() {
+	// For Menu
+	$('.flexmenu').flexslider({
+		animation: "slide",
+		animationLoop: false,
+		controlNav: false, 
+		directionNav: true, 
+		slideshow: false,
+		animationDuration: 300,
+		itemWidth: 68,
+		itemMargin: 0,
+		minItems: 4,
+		maxItems: 20
+    });
+		
+});
+</script>
+<!-- / Menu -->
+</head> 
+<body>
+
+<!-- Main Container -->
+<div data-role="page" data-theme="a">
+
+    <!-- Header -->
+     <div data-role="header" class="header-container" >
+   	    <div class="header-title"></div>
+		 <!-- Home link begin -->
+         <div class="home-container">
+            <a href="index.html" class="sb small House"></a>
+         </div>
+         <!-- Home link end -->
+     </div>
+	<!-- Header End -->
+     
+    <!-- Photo -->     
+    <div class="sub-photo-container">
+      <div class="sub-photo">
+    	<img src="assets/images/Demo/Slide/subpages/triworks_abstract9.jpg" alt="" />
+	  </div>
+    </div>
+    <!-- / Photo -->
+      
+      
+    <!-- Main Menu -->
+    <div class="menu-container"> 
+     <div class="flexmenu carousel1">
+      <ul class="slides">
+      	<li><a href="index.html" data-ajax="false" class="sb House"><span>Home</span></a></li>
+        <li><a href="about.html" data-ajax="false" class="sb Group"><span>About Us</span></a></li>
+        <li><a href="blog.html" data-ajax="false" class="sb Chat"><span>Blog</span></a></li>
+        <li><a href="services.html" data-ajax="false" class="sb Indexcards"><span>Services</span></a></li>
+        <li><a href="gallery.html" data-ajax="false" class="sb Landscape"><span>Gallery</span></a></li>
+        <li><a href="contact.html" data-ajax="false" class="sb Envelope"><span>Contact</span></a></li>
+        <li></li>        
+      </ul>	
+    </div>
+   </div>
+    <!-- /Main Menu -->
+     <div class="clear"></div>
+    <!-- Content -->
+    <div data-role="content" >
+        
+        <!-- Tabs Menu -->
+        <div id="Tabs" class="tab-menu"> 
+            <ul class="tab-menu-ul"> 
+                <li><a href="#tab1" class="selected">Tab Menu</a></li> 
+                <li><a href="#tab2">Navbars</a></li> 
+                <li><a href="#tab3">Icons</a></li>
+            </ul> 
+            
+            <!-- Tab 1 -->
+            <div id="tab1" style="display: block; " class="tab-content">
+            	
+                <p> A usefull tab menu is included our theme. You can use this menu for your own project.</p>
+                <p>In gravida mollis ligula, fringilla ultrices enim iaculis ut. Nunc condimentum sodales elementum. Sed hendrerit erat eu diam euismod dapibus. Fusce pharetra vestibulum eros, ac posuere augue semper eget. In ac risus ligula, quis facilisis massa. Nunc faucibus blandit porta. In tincidunt tincidunt elementum.</p>
+            
+            </div> 
+            <!-- / Tab 1 -->
+            
+            <!-- Tab 2 -->
+            <div id="tab2" style="display: none; " class="tab-content">
+                        
+                <div class="text-title">Two column navbar</div>
+                <div data-role="navbar" class="nav-glyphish" data-grid="a">
+                    <ul>
+                        <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                        <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-title">Three column navbar</div>
+                <div data-role="navbar" class="nav-glyphish" data-grid="b">
+                    <ul>
+                        <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                        <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                        <li><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-title">Four column navbar</div>
+                <div data-role="navbar" class="nav-glyphish" data-grid="c">
+                    <ul>
+                        <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                        <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                        <li><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></li>
+                        <li><a href="https://maps.google.com/" class="iconsub-white-Map" data-icon="custom">Map</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-title">Five column navbar</div>
+                <div data-role="navbar" class="nav-glyphish" data-grid="d">
+                    <ul>
+                        <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                        <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                        <li><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></li>
+                        <li><a href="#" class="iconsub-white-House" data-icon="custom">Home</a></li>
+                        <li><a href="#" class="iconsub-white-Eye" data-icon="custom">About</a></li>
+                    </ul>
+                </div>
+                
+            </div> 
+            <!-- / Tab 2 -->
+            
+            <!-- Tab 3 -->
+            <div id="tab3" style="display: none; " class="tab-content">
+              <p> You can use over 100 Icons on this theme. Please check our help document for more details.</p>
+            </div> 
+            <!-- / Tab 3 -->
+            
+        </div> 
+        
+        <script type="text/javascript"> 
+        $("#Tabs ul").idTabs(); 
+        </script>
+        <!-- / Tabs Menu -->
+        
+        <!-- Toggle Menu -->
+        <div data-role="collapsible" data-collapsed="false" >
+            
+            <h4>Buttons</h4>
+        
+            <div class="text-title">
+            Button Sizes
+            </div>
+            
+            <div class="hr-full-nopad"></div>
+            
+            <div class="text-info">
+                <p>Button have 3 diffrent size;</p>
+                <a href="#" class="small rodin">Button</a>
+                <a href="#" class="medium rodin">Button</a>
+                <a href="#" class="large rodin">Button</a>
+            </div>
+        
+            <div class="text-title">
+            Button Colors
+            </div>
+            
+            <div class="hr-full-nopad"></div>
+            
+            <div class="text-info">
+                <p>Button have 5 different color and easy to use;</p>
+                <a href="#" class="small green rodin">Color</a>
+                <a href="#" class="small blue rodin">Color</a>
+                <a href="#" class="small magenta rodin">Color</a>
+                <a href="#" class="small orange rodin">Color</a>
+                <a href="#" class="small yellow rodin">Color</a>
+            </div>
+        
+            <div class="text-title">
+            jQuery Mobile Featured Buttons
+            </div>
+            
+            <div class="hr-full-nopad"></div>
+        
+            <div class="text-info">
+            
+                <p>Submit Button</p>
+            
+                <input type="submit" value="Submit Button" />
+            
+                <p>By default, grouped buttons are presented as a vertical list:</p>
+                <div data-role="controlgroup">
+                <a href="index.html" data-role="button">Yes</a>
+                <a href="index.html" data-role="button">No</a>
+                <a href="index.html" data-role="button">Maybe</a>
+                </div>
+            
+                <p>By adding the <code>data-type="horizontal"</code>
+                
+                <p>Horizontal grouped buttons:</p>
+                <div data-role="controlgroup" data-type="horizontal">
+                <a href="index.html" data-role="button">Yes</a>
+                <a href="index.html" data-role="button">No</a>
+                <a href="index.html" data-role="button">Maybe</a>
+                </div>
+            
+                <p>Horizontal grouped buttons with icons:</p>
+                <div data-role="controlgroup" data-type="horizontal" >
+                <a href="index.html" data-role="button" data-icon="plus">Add</a>
+                <a href="index.html" data-role="button" data-icon="delete">Delete</a>
+                </div>
+                        
+                <p>Horizontal grouped buttons, icon only:</p>
+                <div data-role="controlgroup" data-type="horizontal" >
+                <a href="index.html" data-role="button" data-icon="arrow-u" data-iconpos="notext">Up</a>
+                <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="notext">Down</a>
+                <a href="index.html" data-role="button" data-icon="delete" data-iconpos="notext">Delete</a>
+                </div>
+        
+            </div>
+        </div>
+        <!-- / Toggle Menu -->
+  
+        
+    </div>
+    <!-- / Content -->
+   	<div class="clear"></div>
+    <!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+	<div data-role="footer" class="nav-glyphish">
+    
+    	<div data-role="navbar" class="nav-glyphish" data-grid="c">
+		<ul>
+			<li><a href="blog.html" class="iconsub-white-Idcard" data-icon="custom">Blog</a></li>
+			<li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+			<li><a href="tel:+900000000" class="iconsub-white-Phone" data-icon="custom">Phone</a></li>
+			<li><a href="index.html" class="iconsub-white-House" data-icon="custom">Home</a></li>
+		</ul>
+		</div>
+        
+	</div>
+    <!-- end -->
+ 
+    
+</div>
+<!-- / Main Container -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+	var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+	s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>-->
+
+</body>
+</html>

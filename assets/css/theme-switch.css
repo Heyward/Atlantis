@@ -1,0 +1,25 @@
+/* 
+Rodin Mobile Theme v1
+CSS Document
+*/
+/* Do not change this line jQuery Mobile Default CSS Files */
+@import url('default-jquery-mobile.css');
+@import url('jquery.mobile.structure.css');
+@import url('icons/icons.css'); /* Do not change general icon config*/
+@import url('icons/main-icons.css');  
+@import url('icons/nav-icons.css'); 
+@import url('add2home.css'); /* Add Home Bubble CSS */
+ 
+/*
+Theme Switcher: You can change theme with this file very easy.
+Just choose theme which one of use. Then delete comment tags.
+*/
+
+/* Black Leather Theme */
+ @import url('leather-black.css');  
+
+/* Red Leather Theme */
+/*  @import url('leather-red.css'); */ 
+
+/* Brown Leather Theme */
+/* @import url('leather-brown.css'); */ 

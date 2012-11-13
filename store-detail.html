@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+<html><head>
+<meta charset="utf-8">
+<title>Rodin | jQuery Mobile Theme</title>
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<!-- Styles -->
+<link rel="stylesheet" href="assets/css/theme-switch.css" type="text/css"> <!--Theme Switcher--> 
+<!-- / Styles -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.1.7.1.min.js"></script>
+<script src="assets/js/jquery.mobile-1.1.0.min.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/jquery.pngFix.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/jquery.tabs.js"></script><!-- Need for Tabs Menu -->
+<!-- / Scripts -->
+
+<!--  Photo Swipe Gallery  -->
+<script src="assets/js/klass.min.js"></script>
+<script src="assets/js/photoswipe.js"></script>
+<link rel="stylesheet" href="assets/css/photoswipe.css">
+<!--  Photo Swipe Gallery End -->
+
+<!--  Photo Swipe Gallery Custom JS  -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var myPhotoSwipe = $("#Gallery a").photoSwipe({ enableMouseWheel: false , enableKeyboard: false });
+    });
+</script>
+<!--  Photo Swipe Gallery Custom JS End-->
+
+<!-- Menu -->
+<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="screen" />
+<script src="assets/js/jquery.flexslider.js"></script>
+<script>
+$(document).ready(function() {
+	// For Menu
+	$('.flexmenu').flexslider({
+		animation: "slide",
+		animationLoop: false,
+		controlNav: false, 
+		directionNav: true, 
+		slideshow: false,
+		animationDuration: 300,
+		itemWidth: 68,
+		itemMargin: 0,
+		minItems: 4,
+		maxItems: 20
+    });
+		
+});
+</script>
+<!-- / Menu -->
+
+</head> 
+<body>
+
+<!-- Main Container -->
+<div data-role="page" data-theme="a">
+
+    <!-- Header -->
+     <div data-role="header" class="header-container" >
+   		<div class="header-title"></div>
+		<!-- Home link begin -->
+         <div class="home-container">
+            <a href="index.html" class="sb small House"></a>
+         </div>
+         <!-- Home link end -->
+     </div>
+	<!-- Header End -->
+     
+    <!-- Photo -->     
+    <div class="sub-photo-container">
+      <div class="sub-photo">
+    	<img src="images/cc/brands/05.png" alt="" />
+	  </div>
+    </div>
+    <!-- / Photo -->
+      
+      
+    <div class="clear"></div>
+    <!-- Content -->
+    <div data-role="content" >
+      	
+        
+        <!-- Text Box Area -->
+        <div class="text-box-area">
+        	<div class="clearfix"></div>
+            <div class="clearfix"></div>
+        	<a href="stores.html" class="small right rodin">Back</a>
+                    
+        	<div class="text-title">AMERICANINO</div>
+            
+        	<div class="hr-full-nopad"></div>
+            
+            <div class="text-info">
+                <p>
+                <strong>Local: </strong>99
+            </div>
+            
+            <div class="text-info">
+                <p>
+                <strong>Horario:</strong><br/>
+                L-V 9am a 10pm<br/>
+				Sabados 8am a 11pm<br/>
+				Domingo 8am a 12pm <br/>
+            </div>
+            
+            <div data-role="navbar" class="nav-glyphish" data-grid="a">
+                <ul>
+                    <li><a href="#" class="iconsub-white-heart" data-icon="heart">Favorito</a></li>
+                    <li><a href="#" class="iconsub-white-Map" data-icon="map">Mapa</a></li>
+                </ul>
+            </div>
+
+			 <!-- Tabs Menu -->
+        <div id="Tabs" class="tab-menu"> 
+            <div style="overflow: auto; width: 300px; height: 30px;">
+	            <ul class="tab-menu-ul" style="width: 800px;"> 
+	                <li><a href="#tab1" class="selected">Promociones</a></li> 
+	                <li><a href="#tab2">Fotos</a></li> 
+	            </ul> 
+            </div>
+            
+            <!-- Tab 1 -->
+            <div id="tab1" style="display: block; " class="tab-content">
+                
+                <!-- Blog Start -->
+			      <ul data-role="listview" data-inset="true">
+			        <li><a href="promo-detail.html">
+			         <img alt="" src="images/cc/brands/04.png" class="img_item">
+			          <h3>35% off</h3>
+			          <p>Ahorre 99.999</p>
+			        </a></li>
+			        <li><a href="promo-detail.html">
+			         <img alt="" src="images/cc/brands/04.png" class="img_item">
+			          <h3>2 x 1</h3>
+			          <p>Ahorre 70.000</p>
+			        </a></li>
+			        <li><a href="promo-detail.html">
+			         <img alt="" src="images/cc/brands/04.png" class="img_item">
+			          <h3>20% off</h3>
+			          <p>Ahorre 40.000</p>
+			        </a></li>
+			        <li><a href="promo-detail.html">
+			         <img alt="" src="images/cc/brands/04.png" class="img_item">
+			          <h3>30% off</h3>
+			          <p>Ahorre 50.000</p>
+			        </a></li>
+			        <li><a href="promo-detail.html">
+			         <img alt="" src="images/cc/brands/04.png" class="img_item">
+			          <h3>15% off</h3>
+			          <p>Ahorre 99.999</p>
+			        </a></li>
+			      </ul>
+			      <!-- / Blog Start -->
+            
+            </div> 
+            <!-- / Tab 1 -->
+            
+            <!-- Tab 2 -->
+            <div id="tab2" style="display: none; " class="tab-content">
+		        <ul id="Gallery" class="gallery">
+		            <li><a href="assets/images/Demo/Galleries/Nature/cyan_tree.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/cyan_tree.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_enchantedcreek.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_enchantedcreek.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_leafbug.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_leafbug.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_pinecone.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_pinecone.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_river1.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_river1.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_woodstump.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_woodstump.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/cyan_tree.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/cyan_tree.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_enchantedcreek.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_enchantedcreek.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_leafbug.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_leafbug.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_pinecone.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_pinecone.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_river1.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_river1.jpg" alt="Image 001" /></a></li>
+		            <li><a href="assets/images/Demo/Galleries/Nature/scottwills_woodstump.jpg" rel="external"><img src="assets/images/Demo/Galleries/Nature/thumb/scottwills_woodstump.jpg" alt="Image 001" /></a></li>
+		            
+		        </ul>
+            </div> 
+            <!-- / Tab 2 -->
+            
+        </div> 
+        
+        <script type="text/javascript"> 
+        $("#Tabs div ul").idTabs(); 
+        </script>
+        <!-- / Tabs Menu -->
+        
+        
+        </div>
+        <!-- / Text Box Area -->
+        
+        
+    </div>
+    <!-- / Content -->
+   	<div class="clear"></div>
+    <!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+	<div data-role="footer" class="nav-glyphish">
+    
+    	<div data-role="navbar" class="nav-glyphish" data-grid="c">
+		<ul>
+			<li><a href="blog.html" class="iconsub-white-Idcard" data-icon="custom">Blog</a></li>
+			<li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+			<li><a href="tel:+900000000" class="iconsub-white-Phone" data-icon="custom">Phone</a></li>
+			<li><a href="index.html" class="iconsub-white-House" data-icon="custom">Home</a></li>
+		</ul>
+		</div>
+        
+	</div>
+    <!-- end -->
+ 
+    
+</div>
+<!-- / Main Container -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+	var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+	s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>-->
+
+</body>
+</html>

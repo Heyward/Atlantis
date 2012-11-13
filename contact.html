@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html><head>
+<meta charset="utf-8">
+<title>Rodin | jQuery Mobile Theme</title>
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<!-- Styles -->
+<link rel="stylesheet" href="assets/css/theme-switch.css" type="text/css"> <!--Theme Switcher-->
+<!-- / Styles -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.1.7.1.min.js"></script>
+<script src="assets/js/jquery.mobile-1.1.0.min.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/jquery.pngFix.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- / Scripts -->
+
+<!-- Menu -->
+<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+<script src="assets/js/jquery.flexslider.js"></script>
+<script>
+$(document).ready(function() {
+	// For Menu
+	$('.flexmenu').flexslider({
+		animation: "slide",
+		animationLoop: false,
+		controlNav: false, 
+		directionNav: true, 
+		slideshow: false,
+		animationDuration: 300,
+		itemWidth: 68,
+		itemMargin: 0,
+		minItems: 4,
+		maxItems: 20
+    });
+		
+});
+</script>
+<!-- / Menu -->
+
+</head> 
+<body>
+
+<!-- Main Container -->
+<div data-role="page" data-theme="a" id="main">
+
+    <!-- Header -->
+     <div data-role="header" class="header-container" >
+   		<div class="header-title"></div>
+		<!-- Home link begin -->
+         <div class="home-container">
+            <a href="index.html" class="sb small House"></a>
+         </div>
+         <!-- Home link end -->
+     </div>
+	<!-- Header End -->
+     
+    <!-- Photo -->     
+    <div class="sub-photo-container">
+      <div class="sub-photo">
+    	<img src="assets/images/Demo/Slide/subpages/triworks_abstract9.jpg" alt="" />
+	  </div>
+    </div>
+    <!-- / Photo -->
+      
+      
+    <!-- Main Menu -->
+    <div class="menu-container"> 
+     <div class="flexmenu carousel1">
+      <ul class="slides">
+        <li><a href="index.html" data-ajax="false" class="sb House"><span>Inicio</span></a></li>
+        <li><a href="promotions.html" data-ajax="false" class="sb Pricetag"><span>Promos</span></a></li>
+        <li><a href="stores.html" data-ajax="false" class="sb Shoppingcart"><span>Tiendas</span></a></li>
+        <li><a href="events.html" data-ajax="false" class="sb Calendar"><span>Eventos</span></a></li>
+        <li><a href="services.html" data-ajax="false" class="sb Shopping"><span>Servicios</span></a></li>
+        <li><a href="favorites.html" data-ajax="false" class="sb heart"><span>Favoritos</span></a></li>
+        <li><a href="maps.html" data-ajax="false" class="sb Map"><span>Mapas</span></a></li>
+        <li><a href="location.html" data-ajax="false" class="sb Network"><span>Localizacíon</span></a></li>
+        <li><a href="contact.html" data-ajax="false" class="sb Envelope"><span>Contáctenos</span></a></li>
+        <li></li>        
+      </ul> 
+    </div>
+   </div>
+    <!-- /Main Menu -->
+     <div class="clear"></div>
+    <!-- Content -->
+    <div data-role="content">
+    	<!-- Collapset Form Block -->
+        <div data-role="collapsible-set">
+           
+           <div data-role="collapsible" data-collapsed="true">
+           	   <h3>Google Map</h3>
+          	   <!-- Map -->   
+               <div class="map-container">
+                    <iframe width="100%" height="255px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;q=atlantis+plaza&amp;fb=1&amp;gl=co&amp;hq=atlantis+plaza&amp;hnear=0x8e3f9bfd2da6cb29:0x239d635520a33914,Bogot%C3%A1&amp;cid=0,0,414475927207733923&amp;ll=4.666202,-74.055473&amp;spn=0.006295,0.006295&amp;t=h&amp;output=embed"></iframe>
+              </div>
+         	  <!-- / Map --> 
+              
+          <div class="clear"></div>
+ 		  </div>       
+        
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>Informacion de contacto</h3>
+            <p>Direccion: Cll 81 # 13-05<br>
+			Telefono: (57)(1) 6066200<br>
+			Email: contacto@atlantis.com
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h3>Formulario de contacto</h3>
+            <!-- Contact Form -->
+            <div class="subcontainer">
+                <form method="post" action="contact-send.php" id="contact_form">
+                <div>
+                <label for="name" class="formsub">Tu Nombre:</label>
+                <input type="text" class="input-area" name="name" id="name" value="" tabindex="1" />
+                </div>
+                <div>
+                <label for="email" class="formsub">Tu Email:</label>
+                <input type="text" class="input-area" name="email" id="email" value="" tabindex="2" />
+                </div>
+                <div>
+                <label for="message" class="formsub">Mensaje:</label>
+                <textarea cols="40" class="textarea" rows="8" name="message" id="message"></textarea>
+                </div>
+                <div id="loader">
+                <button type="submit">Enviar</button>
+                </div>
+                </form>
+            </div>
+            <!-- / Contact Form -->
+          </div>
+          
+        </div>
+        <!-- Collapsed From Block End -->
+        
+    </div>
+    <!-- Content End -->
+   	<div class="clear"></div>
+    <!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+	<div data-role="footer" class="nav-glyphish">
+    
+    	<div data-role="navbar" class="nav-glyphish" data-grid="c">
+		<ul>
+			<li><a href="blog.html" class="iconsub-white-Idcard" data-icon="custom">Blog</a></li>
+			<li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+			<li><a href="tel:+900000000" class="iconsub-white-Phone" data-icon="custom">Phone</a></li>
+			<li><a href="index.html" class="iconsub-white-House" data-icon="custom">Home</a></li>
+		</ul>
+		</div>
+        
+	</div>
+    <!-- end -->
+ 
+    
+</div>
+<!-- / Main Container -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+	var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+	s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>-->
+
+</body>
+</html>
